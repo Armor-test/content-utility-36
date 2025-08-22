@@ -1,0 +1,38 @@
+# CODEOWNERS file for content-utility-36
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-cache @Armor-test/grp-search @Armor-test/squad-mobile
+
+# Directory ownership
+/tools/ @Armor-test/squad-qa @Armor-test/dept-notifications
+/helpers/ @Armor-test/squad-ml @Armor-test/dept-release
+/dist/ @Armor-test/squad-performance @Armor-test/dept-notifications @Armor-test/dept-reporting
+/security/ @Armor-test/squad-reporting @Armor-test/squad-qa
+/web/ @Armor-test/unit-governance @Armor-test/dept-reliability
+/db/ @Armor-test/unit-governance @Armor-test/grp-api @Armor-test/squad-research
+/extensions/ @Armor-test/squad-mobile @Armor-test/unit-test @Armor-test/dept-data
+/third_party/ @Armor-test/squad-qa @Armor-test/squad-ml @Armor-test/squad-cache
+/tests/ @Armor-test/squad-ux @Armor-test/squad-cache
+/src/ @Armor-test/dept-billing @Armor-test/team-logging @Armor-test/unit-cloud
+/app/ @Armor-test/unit-devops @Armor-test/squad-performance
+/pkg/ @Armor-test/team-logging @Armor-test/unit-design
+/static/ @Armor-test/unit-devops @Armor-test/dept-data
+/common/ @Armor-test/dept-release @Armor-test/unit-design @Armor-test/grp-storage
+
+# File type ownership
+*.ini @Armor-test/squad-search @Armor-test/team-reporting
+*.scss @Armor-test/grp-search @Armor-test/dept-automation
+*.kt @Armor-test/squad-performance @Armor-test/grp-reporting @Armor-test/squad-database
+*.html @Armor-test/team-reporting @Armor-test/squad-cache
+*.md @Armor-test/unit-cloud @Armor-test/grp-api
+*.ts @Armor-test/unit-governance @Armor-test/dept-api
+*.php @Armor-test/unit-design @Armor-test/dept-logging @Armor-test/squad-api
+*.tf @Armor-test/dept-identity @Armor-test/grp-storage
+*.py @Armor-test/dept-identity @Armor-test/squad-qa @Armor-test/dept-billing
+*.swift @Armor-test/grp-ui @Armor-test/squad-product
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
